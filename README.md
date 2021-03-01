@@ -25,6 +25,19 @@ python app.py
 - Client
 - Other calls(apis, etc..) are also available
 
+```
+curl -XPOST -H "Content-Type: application/json" http://127.0.0.1:3300/test -d '
+{
+   "test": "1234test",
+   "child": {
+      "child_1": "Hi",
+      "cihld_2": "Hi"
+   },
+   "elements": [ "a", "b", "c" ]
+}
+'
+```
+
 ## Examples
 
 <div style="text-align:center"><img src="./server.png" />
